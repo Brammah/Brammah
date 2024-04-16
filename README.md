@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @Brammah.
-- 👀 I’m interested in Semantics, Fitness, Reading, Podcasts, and Laravel.
-- 🌱 I’m currently perfecting my System Development skills in Laravel.
-- 💞️ I’m looking to collaborate on great projects that bring meaning.
+- 👀 I’m a Indie Hacker and a Software Engineer.
 - 📫 How to reach me on twitter and instagram is on @iambrammah
 
 <!---
