@@ -1,0 +1,226 @@
+:root {
+    --apex-red: #eb1d5e;
+    --apex-red-tint: #bc174b;
+
+    --apex-purple: #6d2a68;
+    --apex-purple-tint: #572253;
+
+    --apex-blue: #1138bf;
+    --apex-blue-tint: #0a1172;
+
+    --apex-blue-light: #274597;
+    --apex-grey: #808080;
+}
+
+/* Scroll to top */
+.scrolltop {
+    background-color: var(--apex-blue);
+    color: var(--apex-blue-tint);
+}
+.scrolltop:hover {
+    background-color: var(--apex-blue-tint);
+    color: #fff;
+}
+
+.btn.btn-primary {
+    color: var(--bs-primary-inverse);
+    border-color: var(--apex-blue-light);
+    background-color: var(--apex-blue);
+}
+
+.bg-apex-mustard {
+    background-color: var(--apex-red-light) !important;
+}
+
+/* Datatables custom CSS */
+.dataTables_wrapper .dataTables_processing {
+    background: var(--apex-grey);
+    border-radius: 3px;
+    color: #fff;
+}
+
+.dataTables_wrapper
+    .dataTables_paginate
+    .pagination
+    .page-item.active
+    > .page-link {
+    background-color: var(--apex-blue);
+}
+
+.dataTables_wrapper
+    .dataTables_paginate
+    .pagination
+    .page-item:hover:not(.disabled)
+    > .page-link {
+    background-color: var(--apex-blue);
+    color: #fff;
+}
+
+.dt-buttons.btn-group.flex-wrap {
+    border-radius: 20px;
+}
+
+div.dt-button-collection .dt-button {
+    min-width: auto;
+}
+
+.dt-button.dropdown-item.active {
+    background-color: var(--apex-blue);
+}
+
+.dt-button.dropdown-item:active {
+    background-color: var(--apex-blue);
+}
+
+div.dt-button-collection .dropdown-menu {
+    max-height: 400px;
+    overflow-y: scroll !important;
+}
+
+.aside-menu .menu-nav > .menu-item.menu-item-open > .menu-heading .menu-icon,
+.aside-menu .menu-nav > .menu-item.menu-item-open > .menu-link .menu-icon {
+    color: var(--apex-blue);
+}
+
+.aside-menu
+    .menu-nav
+    > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(
+        .menu-item-here
+    ):not(.menu-item-active):hover
+    > .menu-heading
+    .menu-icon,
+.aside-menu
+    .menu-nav
+    > .menu-item:not(.menu-item-parent):not(.menu-item-open):not(
+        .menu-item-here
+    ):not(.menu-item-active):hover
+    > .menu-link
+    .menu-icon {
+    color: var(--apex-blue);
+}
+
+.aside-menu
+    .menu-nav
+    > .menu-item
+    .menu-submenu
+    .menu-item.menu-item-active
+    > .menu-heading
+    .menu-icon,
+.aside-menu
+    .menu-nav
+    > .menu-item
+    .menu-submenu
+    .menu-item.menu-item-active
+    > .menu-link
+    .menu-icon {
+    color: var(--apex-blue);
+}
+
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-heading .menu-icon,
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-icon {
+    color: var(--apex-blue);
+}
+
+.aside-menu
+    .menu-nav
+    > .menu-item
+    .menu-submenu
+    .menu-item:not(.menu-item-parent):not(.menu-item-open):not(
+        .menu-item-here
+    ):not(.menu-item-active):hover
+    > .menu-heading
+    .menu-icon,
+.aside-menu
+    .menu-nav
+    > .menu-item
+    .menu-submenu
+    .menu-item:not(.menu-item-parent):not(.menu-item-open):not(
+        .menu-item-here
+    ):not(.menu-item-active):hover
+    > .menu-link
+    .menu-icon {
+    color: var(--apex-blue);
+}
+
+.btn.btn-primary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-primary:focus:not(.btn-text),
+.btn.btn-primary.focus:not(.btn-text) {
+    color: #fff;
+    background-color: var(--apex-blue-tint);
+    border-color: var(--apex-blue-tint);
+}
+
+.btn.btn-light-pri {
+    background-color: var(--apex-blue-light);
+    color: #fff;
+}
+
+.btn.btn-light-pri i,
+.btn.btn-light-pri.dropdown-toggle:after {
+    background-color: var(--apex-blue-light);
+    color: #fff;
+}
+
+.btn.btn-light-pri i:hover,
+.btn.btn-light-pri.dropdown-toggle:after:hover {
+    background-color: var(--apex-blue-light);
+    color: #fff;
+}
+
+.btn.btn-light-pri:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-light-pri:active:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-light-pri:focus:not(.btn-text) {
+    background-color: var(--apex-blue-light);
+    color: #fff;
+}
+
+.btn.btn-light-pri:hover:not(.btn-text):not(:disabled):not(.disabled) i,
+.btn.btn-light-pri:active:not(.btn-text):not(:disabled):not(.disabled) i,
+.btn.btn-light-pri:focus:not(.btn-text) i {
+    /* background-color: var(--apex-purple-tint); */
+    background-color: var(--apex-blue-light);
+    color: #fff;
+}
+
+.btn.btn-hover-primary:hover:not(.btn-text):not(:disabled):not(.disabled),
+.btn.btn-hover-primary:focus:not(.btn-text),
+.btn.btn-hover-primary.focus:not(.btn-text) {
+    color: #fff !important;
+    background-color: var(--apex-blue-tint) !important;
+    border-color: var(--apex-blue-tint) !important;
+}
+
+.select2-results__option .product-name {
+    font-weight: bold;
+}
+
+.select2-results__option .product-code {
+    font-size: 0.85em;
+}
+
+.tooltip-inner {
+    max-width: 500px !important;
+    white-space: normal;
+}
+.warning-row {
+    background-color: yellow;
+    color: red;
+}
+/* Example of custom CSS if needed */
+#material_request_quotation_products,
+#material_request_sale_products {
+    font-size: 1rem; /* Adjust font size */
+    padding: 0.5rem; /* Adjust padding if needed */
+}
+
+.fs-6 {
+    font-size: 1rem !important; /* Bootstrap size classes can sometimes be overridden */
+}
+
+.highlight-low-stock {
+    background-color: #f5c6cb !important; /* Light red shade */
+}
+
+.highlight-awaiting-approval {
+    background-color: #f5c6cb !important; /* Light red shade */
+}

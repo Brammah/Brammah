@@ -1,0 +1,38 @@
+<?php
+
+use App\Models\Branch;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('stores', function (Blueprint $table) {
+            $table->id();
+            $table->foreignIdFor(Branch::class)->nullable()->constrained()->restrictOnDelete()->cascadeOnUpdate();
+            $table->string('name')->index();
+            $table->string('slug');
+            $table->string('identifier')->index();
+            $table->string('location')->nullable()->index();
+            $table->tinyInteger('is_main')->default(0)->index();
+            $table->tinyInteger('status')->default(0)->index();
+            $table->foreignId('created_by')->nullable()->references('id')->on('users')->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreignId('updated_by')->nullable()->references('id')->on('users')->cascadeOnUpdate()->restrictOnDelete();
+            $table->timestamps();
+            $table->unique(['branch_id', 'name', 'identifier'], 'unique_details_per_branch');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('stores');
+    }
+};
